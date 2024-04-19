@@ -1,0 +1,73 @@
+.header {
+  padding-right: 5%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  gap: 5%;
+}
+
+.title {
+  font-family: "Onest", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.title_login {
+  font-family: "Onest", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #453fe1;
+}
+
+.title_reg {
+  font-family: "Onest", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 10px;
+  background-color: #453fe1;
+  border-radius: 20px;
+}
+
+@media (max-width: 800px) {
+  .header {
+    padding-right: 0%;
+    justify-content: center;
+    gap: 2.5%;
+  }
+
+  .title,
+  .title_login,
+  .title_reg {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    padding-right: 0%;
+    justify-content: center;
+    gap: 2.5%;
+  }
+
+  .title,
+  .title_login,
+  .title_reg {
+    font-size: 0.8rem;
+  }
+  .title_reg {
+    padding: 8px;
+    border-radius: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .title,
+  .title_login,
+  .title_reg {
+    font-size: 0.6rem;
+  }
+}
